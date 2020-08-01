@@ -1,50 +1,27 @@
+
+
+
 // Write your Character component here
-import React, { useEffect, useState } from 'react'
-import axios from "axios";
+
+import React from 'react'
 
 
 
-function GetDudes () {
-    const rmAPI = "https://rickandmortyapi.com/api/character/"
-    const [ mort, setMort] = useState([])
-  
 
-
-    useEffect(() => {
-
-        axios.get(`${rmAPI}`)
-        .then(response => {
-          console.log(response)
-          setMort(response.data.results)
-        
-        })
-        .catch(error => {
-          console.log("error", error)
-        })
-      }, [] );
-    
-
-
-
+const Character = (props) => {
+    const { data } = props
     return (
-        <div className="pokemons">
-           {mort.map( index => {
-               return (`${mort.name}`)
-           })}
 
+        <div className="cardInfo">
+                <img className="theCrewImg" src={data.image}/>
+                <h4>{data.name}</h4>
+                <p>Status: {data.status}</p>
+                <p>Species: {data.species}</p>
+            </div> 
+      
+      
         
-            
-            
-        </div>
-
     )
-
-
-
-
-
-
-
 }
 
-export default GetDudes
+export default Character
