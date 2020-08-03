@@ -1,8 +1,53 @@
 .App {
+  
   text-align: center;
+  background-image: url(https://themepack.me/i/c/749x468/media/g/1433/rick-and-morty-theme-jg4.jpg);
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+html{ 
+    
+  background-color: black;
+  background-position: center;
+  /* background-repeat */
+  background-attachment: fixed;
+  /* background-size: 100%; */
+}
+h1{
+  color: turquoise;
+  text-shadow: 1px 2px 5px yellowgreen, 1px 10px 0 black, -1px 10px 0 black, 1px 10px 10px black;
+}
+h3{
+  color:turquoise;
+  text-shadow: 1px 2px 5px yellowgreen, 1px 10px 0 black, -1px 10px 0 black, 1px 10px 10px black;
+}
+img{
+  border-radius: 25px;
+  box-shadow: 1px -10px 10px 10px greenyellow;
+  
+}
+.characters{
+ display: block;
+ margin: 5%;
+ 
+}
+img{
+  padding-bottom :2%;
+  padding-right: 2%;
+  background-color: #d4af37;
+}
+.cardInfo{
+  color: #d4af37;
+  margin: 5%;
+  padding-top: 5%;
+  padding-bottom:2%;
+  margin-left:32.5%;
+  margin-right: 32.5%;
+  background-color: teal;
+  border-radius: 20px;
+  
+}
