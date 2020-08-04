@@ -4,9 +4,9 @@ import Character from './Character.js'
 
 
 
-const CharacterContainer = (props) => {
+const CharacterList = (props) => {
     const { data } = props
-    //console.log(data)
+    
     return (
         <div>
             {data.map(char => {
@@ -17,4 +17,4 @@ const CharacterContainer = (props) => {
 }
 
 
-export default CharacterContainer
+export default CharacterList
